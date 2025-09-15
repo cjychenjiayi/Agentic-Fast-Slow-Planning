@@ -61,7 +61,10 @@ class RagStore:
         # 随机选一个返回
         return random.choice(topk)[1]
     
-scene_store = RagStore("/home/chenjiayi/workspace/icra_2025/langchain/memory_topo_scena/database")
+file_path = os.path.abspath(__file__)
+dir_path = os.path.dirname(file_path)
+
+scene_store = RagStore(os.path.join(dir_path, "database"))
 if __name__ == "__main__":
     # store = RagStore("database")
     # scene_to_add = [['streetbarrier',  9.7, -0.5], ['trafficcone',  13.7, -15.5], ['vehicle', 17.1, 10.5], ['vehicle', 54.7, 0.0]]
