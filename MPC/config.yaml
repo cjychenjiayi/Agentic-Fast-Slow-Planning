@@ -1,0 +1,23 @@
+car_info: {'length': 4.69, 'width': 1.85, 'wheelbase': 2.87, 'cone_type': 'Rpositive', 'max_speed': [5.5, 0.5], 'max_acce': [1, 0.15]}
+receding: 15
+iter_num: 4
+sample_time: 0.2
+process_num: 8
+iter_threshold: 0.1
+slack_gain: 6
+max_sd: 1.0
+min_sd: 0.1
+ws: 0.37
+wu: 0.2
+ro1: 200
+ro2: 0.5
+obstacle_order: true
+enable_reverse: false
+rda_obstacle: false
+min_turn_radius: 5.9
+goal_threshold: 0.1
+amcl_pose: False
+eps: 0.5
+min_samples: 5
+max_obstacle_num: 3
+static_ref_path: False

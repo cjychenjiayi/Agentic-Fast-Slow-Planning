@@ -54,11 +54,8 @@ class RagStore:
             d = match_and_score(scene, item["scene"])
             scored.append((d["similarity"], item))
 
-        # 排序，取前 k 个
-        scored.sort(key=lambda x: x[0])  # 假设 similarity 越小越好
+        scored.sort(key=lambda x: x[0])
         topk = scored[:k]
-
-        # 随机选一个返回
         return random.choice(topk)[1]
     
 file_path = os.path.abspath(__file__)
